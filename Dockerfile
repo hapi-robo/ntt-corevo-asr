@@ -6,7 +6,7 @@
 #
 
 FROM centos:6.8
-MAINTAINER Raymond Oung (r.oung@hapi-robo.com)
+MAINTAINER R. Oung (r.oung@hapi-robo.com)
 
 # install necessary tools
 RUN yum install -y -v wget perl unzip cmake curl-devel
