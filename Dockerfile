@@ -48,4 +48,8 @@ ENV VRG_CLIENT_CA_PATH=/etc/pki/tls/certs/ca-bundle.crt
 ENV LD_LIBRARY_PATH=/usr/local/lib64:$LD_LIBRARY_PATH
 
 # set working directory
-WORKDIR /home/corevo_ASR_SDK_for_Linux_v1.0.1.0/testDriver/bin/
+# WORKDIR /home/corevo_ASR_SDK_for_Linux_v1.0.1.0/testDriver/bin/
+
+# set entrypoint
+ENTRYPOINT ["/home/corevo_ASR_SDK_for_Linux_v1.0.1.0/testDriver/bin/AsrTestDriver.sh"]
+CMD []
