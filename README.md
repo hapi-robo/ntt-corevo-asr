@@ -19,3 +19,12 @@ Run a custom voice sample:
 ```
 $ docker run -v /host/path:/container/path ntt-corevo-asr -f /container/path/<filename>.wav
 ```
+
+where
+* `/host/path` is the path to the folder containing the `.wav` file on the host machine
+* `/container/path` is a unique path in the container that will be used to mount the `/host/path`
+
+For example:
+```
+$ docker run -v /home/rayhrst/data/:/home/data/ ntt-corevo-asr -f /home/data/input.wav
+```
